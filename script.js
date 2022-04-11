@@ -42,7 +42,7 @@ function fetchWeatherData() {
         })
         .catch(function(error) {
             map.style.display = "none"
-            alert("SORRY!!! please enter a valid city name🥴");
+            alert("SORRY! please enter a valid city name🥴");
             if (error.cod == 404) console.log("Not a valid city name!😑🥺");
             else console.log(error);
         });
