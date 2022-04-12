@@ -46,6 +46,7 @@ input {
 
 #map {
     display: none;
+    border-radius: 25px;
 }
 
 
