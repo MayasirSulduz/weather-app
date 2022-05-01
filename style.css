@@ -8,7 +8,67 @@
     font-family: 'Lobster Two';
 }
 
-.container {
+
+/* .clock {
+    /* margin: 0px; */
+
+
+/* padding: 0px; */
+
+
+/* box-sizing: border-box;
+    min-height: 100vh;
+    background: ;
+} */
+
+.clock {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background: #2d2f41;
+    width: 223px;
+    padding: 17px 40px;
+    box-shadow: 0 7px 17px rgba(14, 21, 37, 0.8);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 1s ease-out;
+}
+
+.time {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.hour,
+.dots,
+.minutes {
+    /* font-weight: 500px;
+    line-height: 120px; */
+    /* margin: 0 10px; */
+}
+
+.hour,
+.minute {
+    /* font-size: 60px; */
+    /* width: 10px; */
+}
+
+.dots {
+    /* font-size: 30px;
+    color: #929292; */
+}
+
+
+/* .hour{
+    background: ;
+} */
+
+.my-container {
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -58,4 +118,10 @@ input {
 
 .rounded {
     border-radius: 50%;
+}
+
+.weather-info {
+    font-size: 3rem;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: #555;
 }
