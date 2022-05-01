@@ -12,8 +12,8 @@ const weatherIcon = document.querySelector(".weather-icon");
 const weatherDesc = document.querySelector(".weather-desc");
 const fullReport = document.querySelector('.full-report')
 
-input.value = "tokyo";
-fetchWeatherData();
+// input.value = "tokyo";
+// fetchWeatherData();
 
 function fetchWeatherData() {
     let cityName = input.value;
