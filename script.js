@@ -3,14 +3,14 @@
 const input = document.querySelector(".city-input");
 const suloxxxxx = document.querySelector("#search-btn");
 const clear = document.querySelector("#clear-all");
-const data = document.querySelector(".data");
 const map = document.querySelector("#map");
 const clock = document.querySelector(".clock");
 const time = document.querySelector(".time");
 const period = document.querySelector(".period");
-const tempInfo = document.querySelector(".weather-info");
+const tempInfo = document.querySelector(".weather-temp");
 const weatherIcon = document.querySelector(".weather-icon");
 const weatherDesc = document.querySelector(".weather-desc");
+const fullReport = document.querySelector('.full-report')
 
 input.value = "tokyo";
 fetchWeatherData();
@@ -38,6 +38,7 @@ function fetchWeatherData() {
                 cityName: data.name,
                 timezone: data.timezone / (60 * 60),
                 iconURL: "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@4x.png",
+                description: data.weather[0].description
             };
             //   weatherData["coordinates"] = response.data.coord;
             // weatherData["currTime"] = new Date(
@@ -46,7 +47,7 @@ function fetchWeatherData() {
             // weatherData["cityName"] = response.data.name;
             // weatherData["timezone"] = response.data.timezone / (60 * 60);
             // weatherData["icon"] = response.data.weather[0].icon;
-            data.innerHTML = `
+            fullReport.innerHTML = `
             City Name: ${weatherData.cityName}<br>
             Fetched on: ${weatherData.currTime}<br>
             Coordinates: 
@@ -63,6 +64,7 @@ function fetchWeatherData() {
             weatherIcon.src = weatherData.iconURL;
 
             //set weather description
+            weatherDesc.innerHTML = weatherData.description
 
             map.style.display = "block";
             map.src =

@@ -37,30 +37,52 @@
     transition: all 1s ease-out;
 }
 
-.time {
-    /* display: flex;
+
+/* .time { */
+
+
+/* display: flex;
     justify-content: center;
     align-items: center; */
-}
 
-.hour,
+
+/* } */
+
+
+/* .hour,
 .dots,
-.minutes {
-    /* font-weight: 500px;
+.minutes { */
+
+
+/* font-weight: 500px;
     line-height: 120px; */
-    /* margin: 0 10px; */
-}
+
+
+/* margin: 0 10px; */
+
+
+/* }
 
 .hour,
-.minute {
-    /* font-size: 60px; */
-    /* width: 10px; */
-}
+.minute { */
 
-.dots {
-    /* font-size: 30px;
+
+/* font-size: 60px; */
+
+
+/* width: 10px; */
+
+
+/* }
+
+.dots { */
+
+
+/* font-size: 30px;
     color: #929292; */
-}
+
+
+/* } */
 
 
 /* .hour{
@@ -120,8 +142,22 @@ input {
     border-radius: 50%;
 }
 
-.weather-info {
+.weather-temp {
     font-size: 3rem;
+    margin-left: 20px;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    color: #555;
+    color: darkslategray;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 150px;
+}
+
+.weather-desc {
+    color: chocolate;
 }
